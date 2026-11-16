@@ -1,0 +1,115 @@
+{
+  "customers_scored": 19912,
+  "dormancy_rate": 0.2038,
+  "auc_all_paths_production_weights": 0.7123,
+  "auc_all_paths_recommended_weights": 0.7274,
+  "gini_all_paths_recommended_weights": 0.4548,
+  "channel_signal_gini_by_method": {
+    "naive mean of channel rates": {
+      "DIGITAL_ETB": 0.3788,
+      "DIGITAL_NTB": -0.1501
+    },
+    "volume-weighted": {
+      "DIGITAL_ETB": 0.4062,
+      "DIGITAL_NTB": -0.1434
+    },
+    "volume-weighted + shrinkage": {
+      "DIGITAL_ETB": 0.4267,
+      "DIGITAL_NTB": 0.1127
+    }
+  },
+  "weight_validation": {
+    "DIGITAL_ETB": {
+      "path": "DIGITAL_ETB",
+      "customers": 11058,
+      "dormancy_rate": 0.1945,
+      "production_weights": {
+        "channel": 0.6,
+        "balance": 0.2,
+        "txn": 0.2
+      },
+      "production_gini": 0.4832,
+      "best_weights": {
+        "channel": 0.55,
+        "balance": 0.2,
+        "txn": 0.25
+      },
+      "best_gini": 0.4839,
+      "logistic_ceiling_gini": 0.4829,
+      "production_gap_to_ceiling_pct": -0.1,
+      "recommended_weights": {
+        "channel": 0.6,
+        "balance": 0.2,
+        "txn": 0.2
+      },
+      "recommended_gini": 0.4832
+    },
+    "DIGITAL_NTB": {
+      "path": "DIGITAL_NTB",
+      "customers": 2923,
+      "dormancy_rate": 0.2949,
+      "production_weights": {
+        "channel": 0.8,
+        "txn": 0.2
+      },
+      "production_gini": 0.1696,
+      "best_weights": {
+        "channel": 0.1,
+        "txn": 0.9
+      },
+      "best_gini": 0.3415,
+      "logistic_ceiling_gini": 0.3395,
+      "production_gap_to_ceiling_pct": 50.1,
+      "recommended_weights": {
+        "channel": 0.25,
+        "txn": 0.75
+      },
+      "recommended_gini": 0.3384
+    },
+    "NON_DIGITAL": {
+      "path": "NON_DIGITAL",
+      "customers": 5931,
+      "dormancy_rate": 0.1764,
+      "production_weights": {
+        "balance": 0.5,
+        "txn": 0.5
+      },
+      "production_gini": 0.4936,
+      "best_weights": {
+        "balance": 0.55,
+        "txn": 0.45
+      },
+      "best_gini": 0.4937,
+      "logistic_ceiling_gini": 0.4916,
+      "production_gap_to_ceiling_pct": -0.4,
+      "recommended_weights": {
+        "balance": 0.5,
+        "txn": 0.5
+      },
+      "recommended_gini": 0.4936
+    }
+  },
+  "band_cuts_recalibrated": [
+    27.5,
+    44.2,
+    65.1
+  ],
+  "band_mix_fixed_cuts": {
+    "Negative": 0.179,
+    "At-Risk": 0.333,
+    "Neutral": 0.303,
+    "Positive": 0.185
+  },
+  "band_mix_recalibrated": {
+    "Negative": 0.149,
+    "At-Risk": 0.251,
+    "Neutral": 0.35,
+    "Positive": 0.251
+  },
+  "dormancy_rate_by_band": {
+    "Negative": 0.4727,
+    "At-Risk": 0.2453,
+    "Neutral": 0.1564,
+    "Positive": 0.0689
+  }
+}
