@@ -1,5 +1,7 @@
 # Channel Sentiment Score (CSS)
 
+[![CI](https://github.com/SMLRE/channel-sentiment-score/actions/workflows/ci.yml/badge.svg)](https://github.com/SMLRE/channel-sentiment-score/actions/workflows/ci.yml)
+
 A 0–100 behavioural score that detects retail customer disengagement **before** the customer goes dormant. It blends three signals: **digital channel success rate**, **balance trend** and **transaction velocity**. Each customer gets a band: **Positive / Neutral / At-Risk / Negative**.
 
 > **About the data.** This is a public re-implementation of a production scoring system I built and validated at a commercial bank. The bank's data is proprietary and is **not** in this repo. The code runs on a synthetic generator that reproduces the structure of the problem: three customer paths, few channel attempts for new customers, and overdrawn balances. The "In production" section reports the real project. Everything after it comes from the synthetic data.
@@ -81,4 +83,4 @@ notebooks/walkthrough.ipynb  narrated, executed
 
 ## Author
 
-**Oluwasemilore Sadare**, Senior Data Scientist · [LinkedIn](https://www.linkedin.com/in/oluwasemilore-sadare) · [GitHub](https://github.com/SMLRE)
+**Oluwasemilore Sadare**, Data Scientist · [LinkedIn](https://www.linkedin.com/in/oluwasemilore-sadare) · [GitHub](https://github.com/SMLRE)
